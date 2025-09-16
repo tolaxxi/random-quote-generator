@@ -10,7 +10,7 @@ const App = () => {
 
   async function fetchData() {
     try {
-      const response = await axios.get('https://api.realinspire.live/v1/quotes/random?max:100');
+      const response = await axios.get('https://api.realinspire.live/v1/quotes/random?max:100 ');
 
       setData(response.data);
     } catch (err) {
@@ -28,8 +28,10 @@ const App = () => {
       <h1>Quote of the day</h1>
       <QuoteContext.Provider value={{ data, fetchData }}>
         <Quote />
-        <hr />
-        <Buttons />
+        <div>
+          <hr />
+          <Buttons />
+        </div>
       </QuoteContext.Provider>
     </main>
   );

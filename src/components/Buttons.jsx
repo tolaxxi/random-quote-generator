@@ -30,9 +30,6 @@ const Buttons = () => {
         <button onClick={handleCopy}>
           <FaCopy />
         </button>
-        <button>
-          <FaTwitter />
-        </button>
       </div>
 
       <div className="new-quote">
