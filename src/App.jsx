@@ -10,7 +10,7 @@ const App = () => {
 
   async function fetchData() {
     try {
-      const response = await axios.get('https://api.realinspire.live/v1/quotes/random');
+      const response = await axios.get('https://api.realinspire.live/v1/quotes/random?max:100');
 
       setData(response.data);
     } catch (err) {
